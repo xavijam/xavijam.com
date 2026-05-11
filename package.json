@@ -17,6 +17,9 @@
     "remark": "^15.0.1",
     "remark-html": "^16.0.1"
   },
+  "pnpm": {
+    "ignoredBuiltDependencies": ["sharp", "unrs-resolver"]
+  },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/mdast": "^4.0.4",
