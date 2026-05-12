@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getPostBySlug, getPostSlugs } from "@/lib/posts";
+import { formatPostDate, getPostBySlug, getPostSlugs } from "@/lib/posts";
 import { getSiteOrigin } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -60,7 +60,7 @@ export default async function PostPage({ params }: Props) {
             dateTime={post.date}
             className="text-sm text-neutral-500 tabular-nums"
           >
-            {post.date}
+            {formatPostDate(post.date)}
           </time>
           <h1 className="text-3xl font-semibold tracking-tight">{post.title}</h1>
           {post.description ? (

@@ -1,17 +1,17 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getAllCompanies } from "@/lib/companies";
+import { getAllProjects } from "@/lib/projects";
 
 export const metadata: Metadata = {
-  title: "Companies",
+  title: "Projects",
   description:
-    "Places Javier Álvarez (Medina) has worked: roles, teams, and what shipped at each stop.",
-  alternates: { canonical: "/companies" },
+    "Side projects by Javier Álvarez (Medina): things built outside of work.",
+  alternates: { canonical: "/projects" },
   robots: { index: false, follow: true },
 };
 
-export default async function CompaniesIndexPage() {
-  const companies = await getAllCompanies();
+export default async function ProjectsIndexPage() {
+  const projects = await getAllProjects();
 
   return (
     <main
@@ -27,30 +27,36 @@ export default async function CompaniesIndexPage() {
           <span aria-hidden="true">← </span>
           Home
         </Link>
-        <h1 className="text-3xl font-semibold tracking-tight">Companies</h1>
+        <h1 className="text-3xl font-semibold tracking-tight">Projects</h1>
       </header>
 
       <ul className="flex flex-col gap-8">
-        {companies.map((c) => (
-          <li key={c.slug}>
+        {projects.map((p) => (
+          <li key={p.slug}>
             <Link
-              href={`/companies/${c.slug}`}
+              href={`/projects/${p.slug}`}
               className="group block rounded-md outline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-neutral-950"
-              aria-label={`Read about ${c.title}`}
+              aria-label={`Read about ${p.title}`}
             >
               <h2 className="text-xl font-medium tracking-tight group-hover:underline">
-                {c.title}
+                {p.title}
               </h2>
-              {c.period ? (
-                <p className="mt-1 text-sm text-neutral-500 tabular-nums">{c.period}</p>
+              {p.period ? (
+                <p className="mt-1 text-sm text-neutral-500 tabular-nums">
+                  {p.period}
+                </p>
               ) : null}
-              {c.description ? (
-                <p className="mt-2 text-neutral-600">{c.description}</p>
+              {p.description ? (
+                <p className="mt-2 text-neutral-600">{p.description}</p>
               ) : null}
             </Link>
           </li>
         ))}
       </ul>
+
+      {projects.length === 0 ? (
+        <p className="text-neutral-500">No projects yet.</p>
+      ) : null}
     </main>
   );
 }

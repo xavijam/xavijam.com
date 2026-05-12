@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { CompanyLink } from "@/components/company-link";
 import { PersonJsonLd } from "@/components/json-ld";
 import { SocialLinks } from "@/components/social-links";
@@ -80,6 +81,15 @@ export default function Home() {
           </CompanyLink>, I co-founded it and
           built a product for analyzing real time data.
         </p>
+        <div className="w-full max-w-md text-left md:text-center">
+          <Link
+            href="/posts"
+            className="inline-flex items-center gap-1 rounded-sm text-sm font-medium text-neutral-700 underline-offset-4 outline-offset-4 transition-colors hover:text-neutral-950 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-neutral-950"
+          >
+            Read posts
+            <span aria-hidden="true">→</span>
+          </Link>
+        </div>
         <SocialLinks />
       </main>
     </>

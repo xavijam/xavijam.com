@@ -27,13 +27,19 @@ Dev server: [http://localhost:3000](http://localhost:3000).
 | `app/page.tsx` | Home: avatar, name, career copy, company links, social icons |
 | `app/layout.tsx` | Root layout and metadata |
 | `app/posts/` | Post index (`/posts`) and `[slug]` pages |
+| `app/companies/` | Companies index (`/companies`) and `[slug]` pages |
+| `app/projects/` | Projects index (`/projects`) and `[slug]` pages |
 | `content/posts/` | Markdown posts (`.md` + YAML frontmatter) |
+| `content/companies/` | Markdown company pages (`.md` + YAML frontmatter) |
+| `content/projects/` | Markdown project pages (`.md` + YAML frontmatter) |
 | `lib/posts.ts` | Read posts from disk, compile Markdown with remark |
+| `lib/companies.ts` | Read companies from disk, compile Markdown with remark |
+| `lib/projects.ts` | Read projects from disk, compile Markdown with remark |
 | `lib/social.ts` | Social URLs and `avatarSrc` (`/avatar.png` in `public/`) |
 | `components/company-link.tsx` | External company links with brand hover colors |
 | `components/social-links.tsx` | Social icon row |
 | `lib/site.ts` | Site URL helper, default titles/descriptions for metadata |
-| `app/sitemap.ts` | `sitemap.xml` (home, `/posts`, each post) |
+| `app/sitemap.ts` | `sitemap.xml` (home, section indexes, each post / company / project) |
 | `app/robots.ts` | `robots.txt` and sitemap URL |
 | `public/avatar.png` | Profile photo (home + favicon via `app/icon.png` copy) |
 

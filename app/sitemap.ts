@@ -1,12 +1,17 @@
 import type { MetadataRoute } from "next";
-import { getAllCompanies } from "@/lib/companies";
 import { getAllPosts } from "@/lib/posts";
 import { getSiteOrigin } from "@/lib/site";
+
+// Companies (`/companies`, `/companies/[slug]`) and projects (`/projects`,
+// `/projects/[slug]`) are intentionally excluded from the sitemap while those
+// sections are still being filled in. Their pages also set
+// `robots: { index: false, follow: true }`. Re-add the routes here (mirroring
+// the `posts` block) once they are ready to be indexed publicly, and remove
+// the `robots` overrides on the corresponding pages.
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = getSiteOrigin();
   const posts = await getAllPosts();
-  const companies = await getAllCompanies();
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {
@@ -21,12 +26,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly",
       priority: 0.8,
     },
-    {
-      url: `${base}/companies`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.75,
-    },
   ];
 
   const postRoutes: MetadataRoute.Sitemap = posts.map((post) => ({
@@ -36,14 +35,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  const companyRoutes: MetadataRoute.Sitemap = companies.map((c) => ({
-    url: `${base}/companies/${c.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.65,
-  }));
-
-  return [...staticRoutes, ...postRoutes, ...companyRoutes];
+  return [...staticRoutes, ...postRoutes];
 }
 
 function safeDate(iso: string): Date | undefined {

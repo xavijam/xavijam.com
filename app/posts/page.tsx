@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getAllPosts } from "@/lib/posts";
+import { formatPostDate, getAllPosts } from "@/lib/posts";
 
 export const metadata: Metadata = {
   title: "Posts",
@@ -30,7 +30,7 @@ export default async function PostsIndexPage() {
   return (
     <main
       id="main-content"
-      className="mx-auto flex min-h-dvh max-w-xl flex-col gap-10 px-6 py-16"
+      className="mx-auto flex min-h-dvh max-w-2xl flex-col gap-10 px-6 py-16"
     >
       <header className="space-y-2">
         <Link
@@ -42,9 +42,6 @@ export default async function PostsIndexPage() {
           Home
         </Link>
         <h1 className="text-3xl font-semibold tracking-tight">Posts</h1>
-        <p className="text-neutral-600">
-          Notes on work, tech, and whatever shows up, next to the career story on the home page.
-        </p>
       </header>
 
       <ul className="flex flex-col gap-8">
@@ -59,7 +56,7 @@ export default async function PostsIndexPage() {
                 dateTime={post.date}
                 className="text-sm text-neutral-500 tabular-nums"
               >
-                {post.date}
+                {formatPostDate(post.date)}
               </time>
               <h2 className="mt-1 text-xl font-medium tracking-tight group-hover:underline">
                 {post.title}

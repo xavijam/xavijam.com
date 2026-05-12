@@ -25,6 +25,8 @@ Prefer `pnpm` over npm/yarn in docs and scripts.
 - **All user-visible UI and Markdown post content should be in English** (copy, metadata descriptions, post frontmatter, `lang` on `<html>`).
 - The owner may write chat messages in Spanish; deliver code and site copy in **English** unless they explicitly ask otherwise.
 
+For blog posts, preserve the tone shown by the current personal posts: reflective, candid, and warm, written in first person, with small concrete memories and simple metaphors. Keep the voice slightly informal and human, close to a translated personal note, but polish grammar and clarity without making it sound corporate or over edited. Prefer commas, colons, or short sentences over dash punctuation in prose when possible.
+
 ## Where things live
 
 | Area | Location |
@@ -32,8 +34,12 @@ Prefer `pnpm` over npm/yarn in docs and scripts.
 | Home layout & career summary | `app/page.tsx` |
 | Global layout & default metadata | `app/layout.tsx` |
 | Post list & post page | `app/posts/page.tsx`, `app/posts/[slug]/page.tsx` |
-| Markdown sources | `content/posts/*.md` (YAML frontmatter: `title`, `date`, optional `description`) |
+| Companies list & company page | `app/companies/page.tsx`, `app/companies/[slug]/page.tsx` |
+| Projects list & project page | `app/projects/page.tsx`, `app/projects/[slug]/page.tsx` |
+| Markdown sources | `content/posts/*.md`, `content/companies/*.md`, `content/projects/*.md` (YAML frontmatter per type) |
 | Post loading & remark pipeline | `lib/posts.ts` |
+| Company loading & remark pipeline | `lib/companies.ts` |
+| Project loading & remark pipeline | `lib/projects.ts` |
 | Social profile URLs and avatar path | `lib/social.ts` (`avatarSrc` → `public/avatar.png`) |
 | Site title/description helpers & URL resolution | `lib/site.ts` |
 | Company links (reusable) | `components/company-link.tsx` |
@@ -43,9 +49,11 @@ Prefer `pnpm` over npm/yarn in docs and scripts.
 
 ## Conventions
 
-- **URLs:** posts are `/posts` and `/posts/[slug]`. Social and company links are external with `target="_blank"` and `rel="noopener noreferrer"` where applicable.
+- **URLs:** posts are `/posts` and `/posts/[slug]`, companies are `/companies` and `/companies/[slug]`, and projects are `/projects` and `/projects/[slug]`. Social, company, and project external links use `target="_blank"` and `rel="noopener noreferrer"` where applicable.
 - **Home layout:** on **small screens**, **avatar + title share one row** (smaller avatar, `text-2xl` title); from **`md`**, they **stack** and center with a larger avatar and `text-3xl`. The bio is **left** on mobile and **center** from `md`. **Social icons:** on **mobile only** (`max-md`), the `<nav>` uses **`w-max` + `self-start`** so the three icons stay **grouped on the left**; from **`md`**, **`w-full max-w-md justify-center`** centers them with the rest of the content (`app/page.tsx`, `components/social-links.tsx`).
 - **Company link hovers:** brand colors are intentional; do not replace with generic gray hovers without being asked.
+- **Section indexes:** posts, companies, and projects index pages share the same maximum width as their detail pages (`max-w-2xl`) for visual consistency.
+- **Hidden sections (temporary):** the companies and projects sections are reachable at their URLs but are intentionally hidden from search engines while content is being filled in. Their pages set `robots: { index: false, follow: true }` and they are **not listed in `app/sitemap.ts`**. Do not re-add them to the sitemap or remove the `robots` overrides unless the owner asks.
 - **SEO:** production should set `NEXT_PUBLIC_SITE_URL` to the canonical origin (no trailing slash), e.g. `https://xavijam.com`. See `lib/site.ts` and `README.md` → SEO.
 - **Scope:** keep edits focused on the task; avoid unrelated refactors, extra dependencies, or new markdown docs unless requested.
 
