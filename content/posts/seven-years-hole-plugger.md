@@ -18,19 +18,19 @@ The trick is to savour each task, even the ones you never pictured yourself doin
 
 ## Four holes that marked me
 
-### The money
+*The money*
 
 I never thought I'd lead a team that handled billing for the whole platform. I did it twice, and only the second time did it work well. That second time, it worked because I was fully focused on the problem. Let's be honest: plugging several holes at once is normal in a founder role, but that doesn't make it ideal, or mean you'll do everything else well.
 
-### Oh, security
+*Oh, security*
 
 I ended up there because nobody else was. After someone left, the seat was empty, and instead of hiring for it, I took it myself. I didn't realise how big it was. At the same time I was also covering billing and product. Then came everything around certifications: complying with them, passing audits, taking care of the annual pentesting, filling in security questionnaires, improving the CSP (the browser security rules) of the website and the app, applying for grants, and keeping track of every external service we used, who used it, and why...
 
-### The data
+*The data*
 
 It sounds obvious now, but back then our data was split by region, then by workspace. Only engineers could answer questions about our users. Not even support had that data at hand, and marketing or sales could forget about it. So we built Operational Analytics in under ten days, with a team of two, and later [Birdwatcher](https://www.tinybird.co/blog/birdwatcher-slack-app), an agent that brought those answers to everyone.
 
-### Letting people go
+*Letting people go*
 
 Nobody is ready to let someone go, not even professionals. It's just who I am: I believe a person can always be won back, that there's always more you can bring out of them (not more hours, I mean more of what they're good at), and that part of the blame sits on our side too. It's the most painful and ugliest task there is, though I'd never compare my pain to that of the person on the other side.
 
