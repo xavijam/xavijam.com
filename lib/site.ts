@@ -11,6 +11,9 @@ export function getMetadataBase(): URL {
       /* ignore invalid */
     }
   }
+  if (process.env.VERCEL_ENV === "production") {
+    return new URL("https://xavijam.com");
+  }
   if (process.env.VERCEL_URL) {
     return new URL(`https://${process.env.VERCEL_URL}`);
   }
