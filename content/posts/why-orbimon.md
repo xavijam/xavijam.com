@@ -1,10 +1,10 @@
 ---
 title: "Why Orbimon"
 date: "2026-10-30"
-description: "Why I started Orbimon after Tinybird, and where the name comes from."
+description: "Why I'm building Orbimon, and where the name comes from."
 ---
 
-After seven years at Tinybird, I started something new: [Orbimon](https://orbimon.com). It's an independent observability platform for Starlink. Here is why Starlink, why now, and why that name.
+Lately I've been building something on the side: [Orbimon](https://orbimon.com), an independent observability platform for Starlink. I'm not sure yet where it will go, and that's part of the fun. Here is why Starlink, why I'm building it, and why that name.
 
 ## It started on holidays
 
