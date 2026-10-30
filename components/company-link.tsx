@@ -23,7 +23,10 @@ export function CompanyLink({ href, hoverClassName, children }: CompanyLinkProps
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={className}
+      className={`${className} bg-[length:1em_1em] bg-[position:left_center] bg-no-repeat pl-[1.3em]`}
+      style={{
+        backgroundImage: `url(https://www.google.com/s2/favicons?domain=${encodeURIComponent(new URL(href).hostname)}&sz=32)`,
+      }}
     >
       {children}
       <span className="sr-only"> (opens in new tab)</span>

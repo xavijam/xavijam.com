@@ -120,3 +120,12 @@
 .post-body sub {
   bottom: -0.25em;
 }
+
+/* Favicon shown before external links in posts. A background image keeps
+   the icon on the same line as the first word of the link. */
+.post-body a.has-favicon {
+  padding-left: 1.3em;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1em 1em;
+}
