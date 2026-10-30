@@ -78,8 +78,8 @@ export default function Home() {
             hoverClassName="hover:text-[#27f795] hover:decoration-[#27f795]/40"
           >
             Tinybird
-          </CompanyLink>{" "}
-          and built a product for analyzing real-time data. Now I&apos;m building{" "}
+          </CompanyLink>, a product for analyzing real-time data. Now I&apos;m
+          building{" "}
           <CompanyLink
             href="https://orbimon.com/"
             hoverClassName="hover:text-[#5bbfb5] hover:decoration-[#5bbfb5]/40"
