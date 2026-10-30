@@ -34,7 +34,9 @@ No PRs without a linked ticket. No signing in to unapproved apps with your work 
 
 *The data*
 
-It sounds obvious now, but back then our data was split by region, then by workspace. Only engineers could answer questions about our users. Not even support had that data at hand, and marketing or sales could forget about it. So we built Operational Analytics in under ten days, with a team of two, and later [Birdwatcher](https://www.tinybird.co/blog/birdwatcher-slack-app), an agent that brought those answers to everyone.
+I started Tinybird without knowing much about data. I grew (at Tinybird 😄) to love it, by using the platform and finding ways to improve it to get more insights. The project I'm proudest of is what became Operational Analytics. The team formed around an internal product we built called Birdwatcher, which put our users' stats (not their data, but their stats: ingestion, storage, requests, errors, members and so on) within reach of anyone at Tinybird.
+
+It sounds normal now, but until then the data was split by region, then by workspace. You had to find the user and then run SQL queries in our internal workspaces. Having an internal app where you just searched for an organization's name and got its stats for the last few days or hours felt like discovering gunpowder. Not because it was hard, but because nobody thought it was key. Once we had the plan, it took less than ten days to get the web app to everyone, and we were a team of two. Today it has evolved into the [Birdwatcher agent in Slack](https://www.tinybird.co/blog/birdwatcher-slack-app), which is a real gem.
 
 *Letting people go*
 
