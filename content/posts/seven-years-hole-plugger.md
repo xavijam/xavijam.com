@@ -20,7 +20,9 @@ The trick is to savour each task, even the ones you never pictured yourself doin
 
 *The money*
 
-I never thought I'd lead a team that handled billing for the whole platform. I did it twice, and only the second time did it work well. That second time, it worked because I was fully focused on the problem. Let's be honest: plugging several holes at once is normal in a founder role, but that doesn't make it ideal, or mean you'll do everything else well.
+I never thought I'd lead a team that handled billing for the whole platform. I did it twice. At the beginning, we only used our own platform to calculate each user's usage in real time and sent the numbers to Stripe. It worked, but when you use your own product, you find things. You stop, fix, change, and then keep going. Dogfooding, right? Painful, but it pays off in the long run.
+
+In the next iteration we brought Orb in, but kept pulling the metrics from Tinybird, again. It was the best decision we made: build on our own system, but use a billing platform built for enterprise. That second time, it worked because I was fully focused on the problem. Let's be honest: plugging several holes at once is normal in a founder role, but that doesn't make it ideal, or mean you'll do everything else well.
 
 *Oh, security*
 
