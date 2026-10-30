@@ -72,14 +72,20 @@ export default function Home() {
             CARTO
           </CompanyLink>{" "}
           product, making
-          geospatial data easier to visualize. At{" "}
+          geospatial data easier to visualize. I co-founded{" "}
           <CompanyLink
             href="https://www.tinybird.co/"
             hoverClassName="hover:text-[#27f795] hover:decoration-[#27f795]/40"
           >
             Tinybird
-          </CompanyLink>, I co-founded it and
-          built a product for analyzing real time data.
+          </CompanyLink>{" "}
+          and built a product for analyzing real-time data. Now I&apos;m building{" "}
+          <CompanyLink
+            href="https://orbimon.com/"
+            hoverClassName="hover:text-[#5bbfb5] hover:decoration-[#5bbfb5]/40"
+          >
+            Orbimon
+          </CompanyLink>, observability for Starlink.
         </p>
         <div className="w-full max-w-md text-left md:text-center">
           <Link
