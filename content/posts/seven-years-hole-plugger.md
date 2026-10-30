@@ -34,6 +34,6 @@ For me, that also meant being there when people came to the office from out of t
 
 ## Find the space, then hand it over
 
-That's the job of a Hole Plugger: find the empty space, fill it, and when it's working, hand it to someone who will do it better than you. Then go and find the next one.
+As five founders, we learned to find (or accept) the spaces we could fill, and then hand them to someone far more qualified, someone better, when the time came. I don't think that gets mentioned enough. You have to be ready for the day you change roles, adapt, learn, push, and start all over again.
 
 🌊🌊🌊🌊
