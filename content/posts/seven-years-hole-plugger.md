@@ -8,7 +8,7 @@ When you start a company, founders do everything. There were five of us at Tinyb
 
 ## When the team grows, the holes multiply
 
-Molly Graham has a famous idea about scaling startups: [give away your Legos](https://review.firstround.com/give-away-your-legos-and-other-commandments-for-scaling-startups/). As the company grows, you have to hand your pieces to new people so they can build, and you go find new ones. My spin on it is a bit different. Every time the team grew, new holes appeared, and someone had to plug them. All of us founders did it, each in our own way. Very often, I was one of the ones who jumped in. That's how I became a Hole Plugger. Like a basketball player who lives for rebounds: not the one who scores, but the one who grabs every loose ball so the team gets another chance.
+Molly Graham has a famous idea about scaling startups: [give away your Legos](https://review.firstround.com/give-away-your-legos-and-other-commandments-for-scaling-startups/). As the company grows, you have to hand your pieces to new people so they can build, and you go find new ones. My spin on it is a bit different. Every time the team grew, new holes appeared, and someone had to plug them. All of us founders did it, each in our own way. I became a basketball player who lives for rebounds: not the one who scores, but the one who grabs every loose ball so the team gets another chance.
 
 ## You're not there to do what you like
 
