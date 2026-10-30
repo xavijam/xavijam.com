@@ -1,6 +1,6 @@
 ---
 title: "Goodbye, Tinybird"
-date: "2026-10-30"
+date: "2026-07-01"
 description: "After seven wonderful and intense years, I'm moving on from Tinybird."
 ---
 
