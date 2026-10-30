@@ -55,5 +55,3 @@ Orbit plus observability. That's more or less where Orbimon comes from.
 ## Join the beta
 
 Right now I'm looking for 10 people to try Orbimon in beta. If you have a Starlink and want to know what's really happening with it, [join the beta](https://orbimon.com/beta).
-
-🌊🌊🌊🌊
