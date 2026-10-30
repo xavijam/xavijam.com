@@ -25,6 +25,17 @@ export function CompanyLink({ href, hoverClassName, children }: CompanyLinkProps
       rel="noopener noreferrer"
       className={className}
     >
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={`https://www.google.com/s2/favicons?domain=${encodeURIComponent(new URL(href).hostname)}&sz=32`}
+        alt=""
+        width={16}
+        height={16}
+        loading="lazy"
+        decoding="async"
+        className="mr-[0.3em] inline-block h-[1em] w-[1em] rounded-[3px] align-[-0.125em]"
+      />
+      {"\u2060"}
       {children}
       <span className="sr-only"> (opens in new tab)</span>
     </a>
