@@ -76,7 +76,7 @@ function addLinkFavicons(html: string): string {
       }
       if (host === "xavijam.com" || host.endsWith(".xavijam.com")) return match;
       const icon = `https://www.google.com/s2/favicons?domain=${encodeURIComponent(host)}&amp;sz=32`;
-      return `<a href="${href}"${rest}><img src="${icon}" alt="" width="16" height="16" class="link-favicon" loading="lazy" decoding="async" />`;
+      return `<a href="${href}"${rest}><img src="${icon}" alt="" width="16" height="16" class="link-favicon" loading="lazy" decoding="async" />&#8288;`;
     },
   );
 }
