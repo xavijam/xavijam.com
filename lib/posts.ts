@@ -63,6 +63,24 @@ export async function getAllPosts(): Promise<PostListItem[]> {
   return posts.sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 
+/** Puts the linked site's favicon before every external link in a post. */
+function addLinkFavicons(html: string): string {
+  return html.replace(
+    /<a href="(https?:\/\/[^"]+)"([^>]*)>/g,
+    (match, href: string, rest: string) => {
+      let host: string;
+      try {
+        host = new URL(href.replace(/&amp;/g, "&")).hostname;
+      } catch {
+        return match;
+      }
+      if (host === "xavijam.com" || host.endsWith(".xavijam.com")) return match;
+      const icon = `https://www.google.com/s2/favicons?domain=${encodeURIComponent(host)}&amp;sz=32`;
+      return `<a href="${href}"${rest}><img src="${icon}" alt="" width="16" height="16" class="link-favicon" loading="lazy" decoding="async" />`;
+    },
+  );
+}
+
 export async function getPostBySlug(slug: string): Promise<Post | null> {
   const file = `${slug}.md`;
   const full = path.join(postsDir, file);
@@ -80,6 +98,6 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
       record.description !== undefined
         ? String(record.description)
         : undefined,
-    contentHtml: processed.toString(),
+    contentHtml: addLinkFavicons(processed.toString()),
   };
 }
