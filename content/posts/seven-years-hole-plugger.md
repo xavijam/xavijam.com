@@ -26,7 +26,11 @@ In the next iteration we brought Orb in, but kept pulling the metrics from Tinyb
 
 *Oh, security*
 
-I ended up there because nobody else was. After someone left, the seat was empty, and instead of hiring for it, I took it myself. I didn't realise how big it was. At the same time I was also covering billing and product. Then came everything around certifications: complying with them, passing audits, taking care of the annual pentesting, filling in security questionnaires, improving the CSP (the browser security rules) of the website and the app, applying for grants, and keeping track of every external service we used, who used it, and why...
+I ended up leading everything security related, a sort of unofficial CSO, because nobody else was there. After someone left, the seat was empty, and instead of hiring for it, I took it myself. I didn't realise how big it was. At the same time I was also covering billing and product. Then came everything around certifications: complying with them, passing audits, taking care of the annual pentesting, filling in security questionnaires, granting or removing access, applying for grants, and keeping track of every external service we used, who used it, and why...
+
+It's a slower world than the one I was used to. Far more documents, more back and forth, emails, lots of meetings. Having a more technical profile does help there, because you always try to automate things instead of just moving on to the next one. But what really mattered was communicating, and explaining the why behind decisions that affected our teammates.
+
+No PRs without a linked ticket. No signing in to unapproved apps with your work email. Documenting and presenting why we needed a specific tool. Writing down when someone is given (or loses) access. Your first thought with flows like these is "what a drag", but they're exactly what you need when the awkward questions come.
 
 *The data*
 
