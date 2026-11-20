@@ -54,7 +54,7 @@ Then my hands did the rest, and that is where I learned the most. I learned to s
 
 I like shipping a thing end to end: the board, the case, the firmware, the automation, the way it feels in your hand and in the Home app. I like iterating until the obvious problems are gone, and I like stopping when the next improvement can wait.
 
-When the tool does not fit, I have usually ended up building it. At CARTO I was the first employee, making geospatial data easier to visualize. At Tinybird the connector that was supposed to take billing from Stripe to Holded did not work well, so I built my own sync app. And there is a line I keep finding, from sensor to decision: Tinybird was real-time data, and [Orbimon](https://orbimon.com) exists because nothing independent existed for Starlink, a small device at the edge reading the dish locally.
+It is a bit like what I do with [Orbimon](https://orbimon.com): a small device at the edge, reading something real and telling you what is going on. Different scale, same itch.
 
 At home, the version of that story is quieter. A room that says OFICINA, a case I had to print about six times, and a thermostat that does what I need because I made it that way.
 
