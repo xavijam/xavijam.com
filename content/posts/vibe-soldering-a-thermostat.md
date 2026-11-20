@@ -20,7 +20,7 @@ I also knew how I wanted to live with it. I don't want buttons on the wall. I wa
 
 I tried e-paper first. The board died, and I sent it back. Then I moved to a Waveshare ESP32-S3 with a 4.2 inch reflective LCD. No backlight, a screen that looks closer to paper than to a phone, and a temperature sensor already on the board. The thermostat itself has no relay. It only measures, shows the room, and talks to the house.
 
-![The office thermostat on a desk, its reflective screen showing OFICINA at 21.0 °C and Calentando, surrounded by jumper wires, a buck converter, a USB cable, and green 3D-printed case frames.](/images/posts/the-thermostat-i-wanted/thermostat-desk.jpg)
+![The office thermostat on a desk, its reflective screen showing OFICINA at 21.0 °C and Calentando, surrounded by jumper wires, a buck converter, a USB cable, and green 3D-printed case frames.](/images/posts/vibe-soldering-a-thermostat/thermostat-desk.jpg)
 
 The firmware is ESPHome. Home Assistant sits in the middle, with the Dual Smart Thermostat integration in heat pump mode. A HomeKit Bridge exposes it as a normal thermostat, so I can use Apple Home and Siri. The first room is the office. The screen says OFICINA. In Home Assistant it is already live.
 
