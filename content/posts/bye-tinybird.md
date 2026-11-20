@@ -1,7 +1,7 @@
 ---
 title: "Goodbye, Tinybird"
 date: "2026-07-01"
-description: "After seven wonderful and intense years, I'm moving on from Tinybird."
+description: "After seven years cobuilding the company, it is time to move on."
 ---
 
 June 30 was my last day at Tinybird. After seven wonderful and intense years, I'm moving on.

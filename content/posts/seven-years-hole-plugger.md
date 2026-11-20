@@ -1,6 +1,7 @@
 ---
 title: "Seven years as a Hole Plugger"
 date: "2026-09-03"
+description: "What I did during seven years at Tinybird: finding the holes, plugging them, and handing them over."
 ---
 
 When you start a company, founders do everything. There were five of us at Tinybird, and my part was clear at the beginning: rebuilding the UI, building the demo apps, and hiring.
