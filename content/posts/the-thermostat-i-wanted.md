@@ -1,20 +1,20 @@
 ---
 title: "The thermostat I wanted"
 date: "2026-11-20"
-description: "Why I didn't like any thermostat on the market, and why I ended up building my own."
+description: "Why I ended up building my own thermostat, and everything I learned on the way."
 ---
 
-I have a Daikin Altherma 3 at home, with underfloor heating and a collector on each floor. I needed a thermostat in every room, so I went looking at what you can buy. I didn't like any of them.
+We have aerothermia at home, with underfloor heating and a collector on each floor. I needed thermostats, so I went looking at what you can buy, and nothing really convinced me.
 
-*[TODO: which ones you looked at, and what you disliked]*
+In the end, one thermostat I saw gave me the last push. I liked it a lot. Not to make a product out of it, but because it showed me that something like that could look good on my wall and still cover exactly what I needed.
 
-The conclusion I reached is simple, and a bit stubborn: the best thermostat is the one you build yourself, so it covers your own needs. So I started building mine.
+The conclusion I reached is simple, and a bit stubborn: the best thermostat is the one you build yourself, so it covers your own needs. And it is not only that it is mine. It is that I made it, and I learned a lot of things on the way.
 
 ## What I actually needed
 
-The house has six rooms to cover, three on each floor. The valves sit at the collectors, with 230 V actuators. The wall is flat, with no mechanism box, so a deep connector does not fit, and the cable coming out of the wall is not exactly what a shop thermostat expects.
+The valves sit at the collectors, with 230 V actuators. The wall is flat, with no mechanism box, so a deep connector does not fit, and the cable coming out of the wall is not exactly what a shop thermostat expects.
 
-I also knew how I wanted to live with it. I don't want buttons on the wall. I want to change the temperature from the iPhone, or by asking Siri, and I already switch heat and cool on the Daikin itself. That mix is ordinary if you live in the house. It is much less ordinary if you try to buy it as a product.
+I also knew how I wanted to live with it. I don't want buttons on the wall. I want to change the temperature from the iPhone, or by asking Siri, and I already switch heat and cool on the aerothermia unit itself. That mix is ordinary if you live in the house. It is much less ordinary if you try to buy it as a product.
 
 ## A dead screen, and a better one
 
@@ -24,9 +24,7 @@ I tried e-paper first. The board died, and I sent it back. Then I moved to a Wav
 
 The firmware is ESPHome. Home Assistant sits in the middle, with the Dual Smart Thermostat integration in heat pump mode. A HomeKit Bridge exposes it as a normal thermostat, so I can use Apple Home and Siri. The first room is the office. The screen says OFICINA. In Home Assistant it is already live.
 
-There are seams, and I have left them visible on purpose. Because cooling is a separate toggle, Home shows Off, Heat and Auto, but not Cool. The valve for the office is still a test switch. The Shelly Pro 3 that will drive the actuators, and the Mean Well 24 V supply that will power the boards through a small buck converter, are waiting for the manifold wiring. I am not going to hang everything until I have the parts. One room working is enough to learn. The other five will come after.
-
-*[TODO: cost per room, if you want to mention it]*
+There are seams, and I have left them visible on purpose. Because cooling is a separate toggle, Home shows Off, Heat and Auto, but not Cool. The valve for the office is still a test switch. The Shelly Pro 3 that will drive the actuators, and the Mean Well 24 V supply that will power the boards through a small buck converter, are waiting for the manifold wiring. I am not going to hang everything until I have the parts. One room working is enough to learn. The rest will come after.
 
 ## A case, about six times
 
@@ -50,7 +48,9 @@ The temperature itself needed honesty too. The sensor sits on the board, and the
 
 ## Hands, and a leap I would not have taken
 
-I should say this plainly: without AI I would not have dared to take on this project at all. I don't know electronics the way I know software. The firmware, the parts I had never touched, the case designed in code, the Home Assistant setup: I would have stopped before starting. AI made the leap possible. Then my hands did the rest, the soldering, the pins, the boards, the prints. So much of my work today is AI and software that this part, the tangible one, is something I genuinely enjoy.
+I should say this plainly: without AI I would not have dared to take on this project at all. I don't know electronics the way I know software. The firmware, the parts I had never touched, the case designed in code, the Home Assistant setup: I would have stopped before starting. AI made the leap possible.
+
+Then my hands did the rest, and that is where I learned the most. I learned to solder, badly at first and then a bit better. I spent evenings with a multimeter, checking voltages and polarity before plugging anything in. I learned what a buck converter does, how pins and connectors go together, how boards talk to each other, how to design a part so it actually fits. So much of my work today is AI and software that this part, the tangible one, is something I genuinely enjoy.
 
 ## The one that covers my needs
 
@@ -60,4 +60,4 @@ When the tool does not fit, I have usually ended up building it. At CARTO I was 
 
 At home, the version of that story is quieter. A room that says OFICINA, a case I had to print about six times, and a thermostat that does what I need because I made it that way.
 
-The office is first. Five rooms to go.
+The office is first. The rest will follow.
