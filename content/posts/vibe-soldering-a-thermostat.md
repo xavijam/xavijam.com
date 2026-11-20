@@ -1,7 +1,7 @@
 ---
 title: "Vibe-soldering a thermostat"
 date: "2026-11-20"
-description: "Why I ended up building my own thermostat, and everything I learned on the way."
+description: "Building my own thermostat with AI, a soldering iron and a 3D printer, and everything I learned on the way."
 ---
 
 We have aerothermia at home, with underfloor heating and a collector on each floor. The thermostats we have are, honestly, bad. No wifi, they run on batteries, and they are just not comfortable to use. So I went looking at what you can buy, and nothing really convinced me.
