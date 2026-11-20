@@ -34,8 +34,6 @@ The last shell is v4.6. It is 100.8 by 79.6 mm, with a window of 84.0 by 62.8. I
 
 I printed that piece about six times before it fit. Yes, six. Each time I would take it off the bed, try it, mutter something, change a number in the code, and print it again. It is a ridiculous way to spend an evening, and also one of the parts I enjoy most. With software you feel the change. With a case you hold it. You see that it does not close, you fix half a millimetre, and then, one morning, it does.
 
-*[PHOTO, optional: the case on the wall, when you hang the green one]*
-
 ## When the board goes silent
 
 There was another hole, and this one mattered more than the fit of a tongue.
