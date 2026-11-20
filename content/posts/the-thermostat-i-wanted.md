@@ -1,10 +1,10 @@
 ---
-title: "The thermostat I wanted"
+title: "Vibe-soldering a thermostat"
 date: "2026-11-20"
 description: "Why I ended up building my own thermostat, and everything I learned on the way."
 ---
 
-We have aerothermia at home, with underfloor heating and a collector on each floor. I needed thermostats, so I went looking at what you can buy, and nothing really convinced me.
+We have aerothermia at home, with underfloor heating and a collector on each floor. The thermostats we have are, honestly, bad. No wifi, they run on batteries, and they are just not comfortable to use. So I went looking at what you can buy, and nothing really convinced me.
 
 In the end, one thermostat gave me the last push: the [CTRL One by Elvin Home](https://elvinhome.io/shop/ctrl-one-2), a small custom thermostat running ESPHome with a 4.2 inch e-paper screen. I liked it a lot. Not to make a product out of it, but because it showed me that something like that could look good on my wall and still cover exactly what I needed.
 
