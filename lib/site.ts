@@ -1,6 +1,13 @@
+/** Production origin, used whenever NEXT_PUBLIC_SITE_URL is not set. */
+const PRODUCTION_ORIGIN = "https://xavijam.com";
+
 /**
  * Canonical site URL for metadata, sitemap, and JSON-LD.
- * Set in production: NEXT_PUBLIC_SITE_URL=https://xavijam.com
+ * Optional override: NEXT_PUBLIC_SITE_URL (no trailing slash).
+ * Vercel system env vars are not exposed to this build, so we cannot rely on
+ * VERCEL_ENV or VERCEL_URL. Builds default to the production origin (previews
+ * then point their canonical at production, which is what we want for SEO);
+ * only `next dev` uses localhost.
  */
 export function getMetadataBase(): URL {
   const fromEnv = process.env.NEXT_PUBLIC_SITE_URL;
@@ -11,13 +18,10 @@ export function getMetadataBase(): URL {
       /* ignore invalid */
     }
   }
-  if (process.env.VERCEL_ENV === "production") {
-    return new URL("https://xavijam.com");
+  if (process.env.NODE_ENV === "development") {
+    return new URL("http://localhost:3000");
   }
-  if (process.env.VERCEL_URL) {
-    return new URL(`https://${process.env.VERCEL_URL}`);
-  }
-  return new URL("http://localhost:3000");
+  return new URL(PRODUCTION_ORIGIN);
 }
 
 export function getSiteOrigin(): string {

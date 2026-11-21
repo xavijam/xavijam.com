@@ -62,7 +62,7 @@ The post index lists all `.md` files sorted by `date` (newest first).
 - **`metadataBase`** and global defaults are in `app/layout.tsx` (Open Graph, Twitter `summary` card, `robots`, keywords, authors).
 - **Per route:** `app/page.tsx` (home canonical + OG), `app/posts/page.tsx`, and `generateMetadata` on each post (`article` OG type + `publishedTime` when available).
 - **Structured data:** `PersonJsonLd` on the home page (name, site URL, `sameAs` from `lib/social.ts`).
-- **Production URL:** set `NEXT_PUBLIC_SITE_URL=https://xavijam.com` (no trailing slash) in the deployment environment so canonicals, Open Graph URLs, the sitemap, and JSON-LD use the real domain. If unset on Vercel, `VERCEL_URL` is used; locally it falls back to `http://localhost:3000`.
+- **Production URL:** set `NEXT_PUBLIC_SITE_URL=https://xavijam.com` (no trailing slash) in the deployment environment so canonicals, Open Graph URLs, the sitemap, and JSON-LD use the real domain. If unset, every build (production and previews) uses `https://xavijam.com`; only `next dev` falls back to `http://localhost:3000`.
 
 ## Configuration
 
